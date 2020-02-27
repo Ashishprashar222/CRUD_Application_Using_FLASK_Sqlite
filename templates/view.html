@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Employee list</title>
+</head>
+<body bgcolor="pink">
+<h1>Employee info..</h1>
+<table bgcolor="red" border="1">
+    <thead>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Email</td>
+        <td>Address</td>
+    </thead>
+
+    {% for row in rows %}
+        <tr>
+            <td>{{row['id']}}</td>
+            <td>{{row['name']}}</td>
+            <td>{{row['email']}}</td>
+            <td>{{row['address']}}</td>
+        </tr>
+    {% endfor %}
+
+</table>
+<br>
+<a href="/">Back to home</a>
+</body>
+</html>
